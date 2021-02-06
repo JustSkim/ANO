@@ -1,0 +1,62 @@
+/*
+主页中一些通用的样式
+*/
+#FrontEnd{
+    font-size: 18px;
+    line-height: 1.5;
+}
+hr{
+    height: 1px;
+    border:none;
+    background-color: lightgray;
+    width:54em;/*54个font-size为18px的字符长度*/
+}
+ul.content_items{
+    list-style-type:none;
+    margin: 0;
+}
+li.content_item{
+    margin: 0 0 100px;
+}
+.item_title{
+    font-size: 30px;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+}
+.item_words{
+    text-indent: 2em;/*缩进两个相对单位 */
+}
+div.flex_box{
+    width:959px;
+    display: flex;
+    display: -webkit-flex;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*
+    让每一行中的元素两边间隔相等
+    若使用space-between的话，因为起点从左开始，在只有一个元素的情况下会导致左边贴齐父级div，无法居中
+    */
+    align-items: center;   /*交叉轴的中点对齐*/
+}
+img.imgInFlex{
+    max-width: 100%;
+    max-height:300px;
+}
+div.wordInFlex{
+    font-size: 16px;
+    color: #666;
+    width:unset;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color:brown;
+}
+a:visited{
+    color:black;
+}
